@@ -10,6 +10,17 @@ Una tabña no tener filas duplicadas, por lo cual necesita un campo que sea PK(P
 ¿Que es una PK? Una PK es un campo o grupo de campos que impiden que se dupliquen los registros
 de una tabla. En una tabla solamente puede haber una PK, y los campos que participan en la PK 
 tendran una llavesita al principio, ademas un campo que es PK no abmite valores NULL, que null en 
-base de datos no quiere decir que sea una cadena vacia, ni un valor por defecto cero, NULL quiere decir desconocido y hay que tener mucho cuidado con los valores NULL y evitarlos en la medida de lo
+base de datos no quiere decir que sea una cadena vacia, ni un valor por defecto cero, NULL quiere decir desconocido 
+y hay que tener mucho cuidado con los valores NULL y evitarlos en la medida de lo
 posible, porque al evaluar una expresion donde halla un valor NULL toda la expresion se puede 
 evaluar como NULL.
+UQ (Unique): No puede existir mas de una PK en la tabla, pero si varios campos UQ, que ademas
+si admite NULL en al menos un registro.
+
+En un sistema de Gestion de Bases de Datos Relacional, las tablas tienen/deben de estar relacionadas. 
+¿Como se establecen las relaciones entre las tablas? Rta. A través de las Relaciones de Clave Externas o FK (Foreign Keys). 
+
+¿Que es una FK, Clave Extranjera o Foranea?
+
+Es un campo de una tabla que hace referencia a un campo de otra tabla, que es PK en dicha tabla, 
+el nombre de los campos no tiene que ser igual pero si el tipo de datos.
